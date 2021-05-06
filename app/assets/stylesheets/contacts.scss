@@ -1,3 +1,138 @@
 // Place all the styles related to the contacts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+.newContact {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction:column;
+    width:100%;
+    height:50vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    align-items: center;
+
+    div {
+        display:flex;
+        width:20rem;
+        justify-content:space-between;
+        align-items: center;
+        margin:0.2rem;
+
+        label{
+            margin-right:1rem;
+        }
+
+    }
+
+    .actions {
+        margin-top:1rem;
+        width:18rem;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+        button {
+            background-color: black;
+            color:#fff;
+        }
+    }
+}
+
+.showContacts{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction:column;
+    width:100%;
+    height:50vh;
+    align-items: center;
+
+    h1 {
+        text-align: center;
+    }
+
+}
+
+.editContact {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction:column;
+    width:100%;
+    height:50vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    align-items: center;
+
+    div {
+        display:flex;
+        width:20rem;
+        justify-content:space-between;
+        align-items: center;
+        margin:0.2rem;
+
+        label{
+            margin-right:1rem;
+        }
+
+    }
+
+    .actions {
+        margin-top:1rem;
+        width:18rem;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+        button {
+            background-color: black;
+            color:#fff;
+        }
+    }
+
+    .buttons {
+        margin-top:1rem;
+        width: 10rem;
+        display: flex;
+    }
+}
+
+.showContact {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction:column;
+    width:100%;
+    height:50vh;
+    align-items: center;
+
+    .box {
+        width: 30rem;
+        height: 50vh;
+        box-shadow: 2px 2px rgba(0,0,0,0.05);
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-weight: 100;
+            strong {
+                font-weight:600;
+            }
+        }
+
+        .buttons {
+            margin-top:1rem;
+            width: 10rem;
+            display: flex;
+            justify-content:space-between;
+        }
+    }
+}

@@ -1,29 +1,33 @@
-<p id="notice"><%= notice %></p>
+<div class="showContact">
+  <p id="notice"><%= notice %></p>
+  <div class="box">
+    <p>
+      <strong>First name:</strong>
+      <%= @contact.first_name %>
+    </p>
 
-<p>
-  <strong>First name:</strong>
-  <%= @contact.first_name %>
-</p>
+    <p>
+      <strong>Last name:</strong>
+      <%= @contact.last_name %>
+    </p>
 
-<p>
-  <strong>Last name:</strong>
-  <%= @contact.last_name %>
-</p>
+    <p>
+      <strong>Email:</strong>
+      <%= @contact.email %>
+    </p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @contact.email %>
-</p>
+    <p>
+      <strong>Phone:</strong>
+      <%= @contact.phone %>
+    </p>
 
-<p>
-  <strong>Phone:</strong>
-  <%= @contact.phone %>
-</p>
-
-<p>
-  <strong>Twitter:</strong>
-  <%= @contact.twitter %>
-</p>
-
-<%= link_to 'Edit', edit_contact_path(@contact) %> |
-<%= link_to 'Back', contacts_path %>
+    <p>
+      <strong>Twitter:</strong>
+      <%= @contact.twitter %>
+    </p>
+    <div class="buttons">
+    <%= link_to 'Edit', edit_contact_path(@contact) %> |
+    <%= link_to 'Back', contacts_path %>
+    </div>
+  </div>
+</div>
