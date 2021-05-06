@@ -14,6 +14,7 @@
     font-size: 1rem;
     font-weight: 100;
     align-items: center;
+    color:#fff;
 
     div {
         display:flex;
@@ -55,6 +56,9 @@
 
     h1 {
         text-align: center;
+        margin:0;
+        background-color:#212529;
+        color:#fff;
     }
 
 }

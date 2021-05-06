@@ -4,6 +4,8 @@ body {
     margin:0;
     padding:0;
     box-sizing:border-box;
+    background-color:#212529;
+    color:#fff;
 }
 
 h1 {
@@ -20,5 +22,15 @@ p {
 }
 
 .navHome {
+    height:15vh;
     font-family: 'Montserrat', sans-serif;
+    color:#fff;
+    .displayName {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        p {
+            margin: 1rem;
+        }
+    }
 }

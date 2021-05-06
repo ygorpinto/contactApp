@@ -1,6 +1,5 @@
 <div class=showContacts>
 <h1>Contacts</h1>
-
 <table class="table table-dark table-hover">
   <thead>
     <tr>
@@ -16,6 +15,7 @@
   <tbody>
     <% @contacts.each do |contact| %>
       <tr>
+      <%if contact.user == current_user%>
         <td><%= contact.first_name %></td>
         <td><%= contact.last_name %></td>
         <td><%= contact.email %></td>
@@ -24,6 +24,7 @@
         <td><%= link_to 'Show', contact %></td>
         <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
         <td><%= link_to 'Destroy', contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <%end%>
       </tr>
     <% end %>
   </tbody>
